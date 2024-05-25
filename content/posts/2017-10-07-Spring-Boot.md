@@ -5,7 +5,7 @@ description: "Understanding Spring and Spring Boot"
 categories: ["tech"]
 tags: ["java", "spring", "spring boot"]
 date: 2017-10-07 19:45:31 +0530
-author: "Sai Kiran"
+author: "Sai kiran"
 ---
 
 When we enjoy benefits of a system, 
@@ -136,4 +136,4 @@ In Python we have a similar language construct called `decorator`.
 [Introduction to Spring Modules]: http://springtutorials.com/introduction-to-spring-modules/
 
 ------
-[GuidelinesPOST]: {{ '/cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html' | absolute_url }}
+[GuidelinesPOST]: {{< relref "2017-04-15-the-guidelines-and-different-varieties-of-perceiving.md" >}}

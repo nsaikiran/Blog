@@ -5,7 +5,7 @@ description: "Interaction between web server and application code"
 categories: ["tech"]
 tags: ["web"]
 date: 2019-05-05 19:45:31 +0530
-author: "Sai Kiran"
+author: "Sai kiran"
 ---
 
 
@@ -52,7 +52,7 @@ and sending out response, and code that operates on our resources according to t
 The former is HTTP Server code and the latter is *application code*.
 
 
-![web service]({{'/assets/images/server-interface/web service.jpg' | absolute_url }})
+![web service](images/web-service.jpg#center)
 
 
 Soon, the "technical" expectations of the servers changed; they are expected to be 
@@ -72,7 +72,7 @@ buffering response to clients with low bandwidth, HTTPS support, etc.,
 To solve the latter problem, people started to building *web frameworks* to simplify the dynamic 
 response generation. 
  
-![web service seperated into server and application]({{'/assets/images/server-interface/server-application.jpg' | absolute_url }})
+![web service seperated into server and application](images/server-application.jpg)
 
 Web servers are the qualified gate keepers of our services.
 Famous web servers out there are [nginx](https://www.nginx.com/), 
@@ -98,7 +98,7 @@ As the web server are "generic", any application can be interfaced.
 But the interfacing methods depend on the type of the application. 
 For example, the application can be a group of *script files* or a standalone service.
 
-![web server interface]({{'/assets/images/server-interface/interface.jpg' | absolute_url }})
+![web-server-interface](images/interface.jpg#center)
 
 Below are some widely used interfaces:
 - [CGI](https://tools.ietf.org/html/rfc3875)
@@ -160,7 +160,7 @@ These servers can be called as *application servers*.
 - [Web Characterization Terminology & Definitions Sheet](https://www.w3.org/1999/05/WCA-terms/)
 
 *Behind the magic curtains* is a series of writings. 
-Checkout [Behind the magic curtains: Spring Boot]({{'tech/2017/10/07/Spring-Boot.html' | absolute_url}})
+Checkout [Behind the magic curtains: Spring Boot]({{< ref "2017-10-07-Spring-Boot.md" >}})
 
 
 [webserver]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server

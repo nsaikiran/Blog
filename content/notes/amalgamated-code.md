@@ -3,8 +3,8 @@ layout: post
 title:  "Amalgamated code"
 description: "A method to release the source code"
 categories: ["release-technique"]
-date: 11-12-2023 19:45:31 +0530
-author: "Sai Kiran"
+date: 2023-12-11 19:45:31 +0530
+author: "Sai kiran"
 ---
 
 Came to know that code base that is developer friendly is can be converted to a format that is easy for clients/consumers to include in their codebase.

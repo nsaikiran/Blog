@@ -3,7 +3,7 @@ layout: post
 title:  "Code is the law"
 categories: ["impression"]
 date: 2019-01-31 19:45:31 +0530
-author: "Sai Kiran"
+author: "Sai kiran"
 ---
 
 *This post is in my drafts for a very long time.
@@ -41,7 +41,8 @@ of the dialogues of The Brethren Court scene of
 Pirates of the Caribbean: At World's End. Pirates of the Caribbean
 is one of my favorite movie series.*
 
-![CODEISLAW]({{'/assets/images/code-is-law.gif' | absolute_url }})
+![CODEISLAW](code-is-law.gif#center)
+
 
 ----------------
 <!--Inspired by a dialogue in pirates of the caribbean.-->

@@ -4,7 +4,7 @@ title:  "Server side vs client side rendering"
 description: "server side vs client side rendering"
 categories: ["server-client"]
 date: 2024-03-07 19:45:31 +0530
-author: "Sai Kiran"
+author: "Sai kiran"
 ---
 ## Introduction
 > What is server side vs client side rendering?
@@ -19,7 +19,8 @@ There are differences between those. Each one has its own pros and cons. We need
 
 This is a rough notes to record my learnings.
 
-![Image that explains server-side, client-side rendering and static side generation]({{'/assets/images/sys-design-the-web/slide.png' | absolute_url }})
+![Image that explains server-side, client-side rendering and static side generation](images/slide.png#center)
+
 This is taken from [ AWS re:Invent 2023 - Scaling on AWS for the first 10 million users (ARC206) ](https://www.youtube.com/watch?v=JzuNJ8OUht0&t=2188s) refer slides at [slideshare](https://www.slideshare.net/search?searchfrom=header&q=+Scaling+on+AWS+for+the+First+10+Million+Users+&page=2) for 2023 AWS event.
 
 ## Footnotes

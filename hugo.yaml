@@ -1,10 +1,9 @@
 baseURL: https://example.org/
 languageCode: en-us
 title: Leap
-bio: Computer Science. Technology. Impression
 theme: ["paper"]
 paginate: 10 #this is default
-
+enableEmoji: true
 
 menus:
   main:
@@ -26,6 +25,9 @@ menus:
   #   weight: 40
 
 params:
+  #name: "Sai kiran Naragam"
+  #bio: "Computer Science. Technology. Impression"
+  
   color: 'linen'
 
   rss: true
@@ -34,6 +36,7 @@ params:
   mainSections:
   - posts
   #- short-notes #Commented this, because I don't short notes to be shown on main listing
+  #- drafts
 
 
   # buttons:

@@ -38,7 +38,7 @@ params:
   #- short-notes #Commented this, because I don't short notes to be shown on main listing
   #- drafts
 
-  favicon: "/favicons/diving.ico"
+  favicon: "favicons/diving.ico"
 
 services:
   disqus:

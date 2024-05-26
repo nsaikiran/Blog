@@ -38,10 +38,13 @@ params:
   #- short-notes #Commented this, because I don't short notes to be shown on main listing
   #- drafts
 
+  favicon: "/favicons/diving.ico"
 
-  # buttons:
-  #     - name: Archive
-  #       url: "/archive"
+services:
+  disqus:
+    shortname: nsaikiran
+  googleAnalytics:
+    ID: UA-89879231-1
 
 # [params]
 #   # color style

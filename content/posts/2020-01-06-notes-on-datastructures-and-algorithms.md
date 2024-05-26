@@ -6,6 +6,8 @@ categories: ["cs"]
 tags: ["data-structures", "algorithms", "data structure"]
 date: 2020-01-06 19:45:31 +0530
 author: "Sai kiran"
+aliases:
+  - /blog/cs/2020/01/06/notes-on-datastructures-and-algorithms.html
 ---
 
 ## Motivation 

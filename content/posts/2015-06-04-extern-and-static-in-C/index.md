@@ -5,9 +5,6 @@ description: "Modular programming in the C programming language"
 categories: ["cs"]
 date: 2015-06-04 19:45:31 +0530
 author: "Sai kiran"
-url: /cs/2015/06/04/extern-and-static-in-C.html
-aliases:
-  - /cs/2015/06/04/extern-and-static-in-C.html
 ---
 
 ---

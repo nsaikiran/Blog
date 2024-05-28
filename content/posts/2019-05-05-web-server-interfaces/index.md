@@ -6,9 +6,6 @@ categories: ["tech"]
 tags: ["web"]
 date: 2019-05-05 19:45:31 +0530
 author: "Sai kiran"
-url: /tech/2019/05/05/web-server-interfaces.html
-aliases:
-  - /tech/2019/05/05/web-server-interfaces.html
 ---
 
 

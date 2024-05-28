@@ -4,9 +4,6 @@ title:  "Code is the law"
 categories: ["impression"]
 date: 2019-01-31 19:45:31 +0530
 author: "Sai kiran"
-url: /impression/2019/01/31/Code-is-the-law.html
-aliases:
-  - /impression/2019/01/31/Code-is-the-law.html
 ---
 
 *This post is in my drafts for a very long time.

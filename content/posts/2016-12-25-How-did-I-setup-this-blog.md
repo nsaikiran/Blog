@@ -5,6 +5,10 @@ description: "Setting up blog in GithubPages"
 categories: ["tech"]
 date: 2016-12-25 19:45:31 +0530
 author: "Sai Kiran"
+url: /tech/2016/12/25/How-did-I-setup-this-blog.html
+aliases:
+  - /tech/2016/12/25/How-did-I-setup-this-blog.html
+
 ---
 
 ## Host the site

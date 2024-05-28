@@ -6,6 +6,9 @@ categories: ["tech"]
 tags: ["java", "spring", "spring boot"]
 date: 2017-10-07 19:45:31 +0530
 author: "Sai kiran"
+url: /tech/2017/10/07/Spring-Boot.html
+aliases:
+  - /tech/2017/10/07/Spring-Boot.html
 ---
 
 When we enjoy benefits of a system, 

@@ -6,6 +6,9 @@ date:   2016-01-02 19:45:31 +0530
 categories: ["tech", "cs", "impression"]
 date: 2016-01-02 19:45:31 +0530
 author: "Sai Kiran"
+url: /tech/cs/impression/2016/01/02/perspective.html
+aliases:
+  - /tech/cs/impression/2016/01/02/perspective.html
 ---
 
 Nowadays, *programming* is not that hard as it was earlier. Moreover, a

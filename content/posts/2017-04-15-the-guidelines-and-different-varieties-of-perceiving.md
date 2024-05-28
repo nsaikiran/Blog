@@ -5,6 +5,9 @@ description: "Understanding data types and configuration files"
 categories: ["cs"]
 date: 2017-04-15 19:45:31 +0530
 author: "Sai Kiran"
+url: /cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html
+aliases:
+  - /cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html
 ---
 
 *This post is the result of my attempt to better understand software systems. 

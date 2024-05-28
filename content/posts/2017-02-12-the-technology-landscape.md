@@ -5,6 +5,9 @@ description: "What to do with the proliferation of technologies"
 categories: ["tech","impression"]
 date: 2017-02-12 19:45:31 +0530
 author: "Sai Kiran"
+url: /tech/impression/2017/02/12/the-technology-landscape.html
+aliases:
+  - /tech/impression/2017/02/12/the-technology-landscape.html
 ---
 
 Felt the proliferation and fast pacing development of technologies. 

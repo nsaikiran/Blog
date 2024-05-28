@@ -6,6 +6,9 @@ categories: ["tech","impression"]
 tags: ["tribute"]
 date: 2018-03-08 19:45:31 +0530
 author: "Sai kiran"
+url: /impression/2018/03/08/for-the-glory-of-giants.html
+aliases:
+  - /impression/2018/03/08/for-the-glory-of-giants.html
 ---
 
 *[If I have seen further it is by standing on the shoulders of Giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)

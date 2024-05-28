@@ -6,6 +6,9 @@ date:   2015-09-28 19:45:31 +0530
 categories: ["cs", "impression"]
 date: 2015-09-28 19:45:31 +0530
 author: "Sai Kiran"
+url: /cs/impression/2015/09/28/to-be-a-programming-language-poet.html
+aliases:
+  - /cs/impression/2015/09/28/to-be-a-programming-language-poet.html
 ---
 
 Learning a programming language is same as `learning any natural language`. Except programming language have negligible amount of  special

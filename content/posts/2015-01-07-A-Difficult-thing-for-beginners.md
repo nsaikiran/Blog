@@ -5,6 +5,9 @@ description: "Getting used to high level languages"
 date:   2015-01-07 19:45:31 +0530
 categories: ["cs"]
 author: "Sai Kiran"
+url: /cs/2015/01/07/A-Difficult-thing-for-beginners.html
+aliases:
+  - /cs/2015/01/07/A-Difficult-thing-for-beginners.html
 ---
 
 I feel that a programmer finds it difficult to adopt a certain language constructs that are low-level when compared to a high-level language he/she has worked with.

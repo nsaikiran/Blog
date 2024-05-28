@@ -6,6 +6,9 @@ categories: ["tech"]
 tags: ["container", "docker", "kubernetes"]
 date: 2017-03-04 19:45:31 +0530
 author: "Sai Kiran"
+url: /tech/2017/03/04/Process-containers.html
+aliases:
+  - /tech/2017/03/04/Process-containers.html
 ---
 
 *This is not a thorough discussion about **process containers**. 

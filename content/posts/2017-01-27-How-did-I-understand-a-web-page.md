@@ -5,6 +5,10 @@ description: "Understanding web technologies"
 date:   2017-01-27 19:45:31 +0530
 categories: ["tech"]
 author: "Sai Kiran"
+url: /tech/2017/01/27/How-did-I-understand-a-web-page.html
+aliases:
+  - /tech/2017/01/27/How-did-I-understand-a-web-page.html
+
 ---
 
 That was really fun viewing my own image, using *marquee* and *blink* tags with both text and images 

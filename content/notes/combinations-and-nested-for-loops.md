@@ -1,8 +1,8 @@
 ---
-title:  "Combinations"
-description: "Generating all k-combinations of "
+title:  "N-choose-K"
+description: "Generating all k-combinations of N objects using nested for loops"
 categories: ["algorithms"]
-date: 2023-12-11 19:45:31 +0530
+date: 2024-05-28 19:45:31 +0530
 author: "Sai kiran"
 comments: false
 ---
@@ -20,3 +20,17 @@ for i in range(len(N) - 1):
 How does this generate the correct result? Why the inner loop starts from `i`?
 The outer loop fixes one element and inner loop goes over all remaining elements, such that the pair never repeats. If the inner loop also starts from the beginning of the list, then we will see the combinations that we have already seen.
 Remember the difference between combinations and permutations. Here we are looking for combinations.
+What is the time complexity here?
+```n-1 + n-2 + n-3 + ... + 1 ```
+This is same as sum of first n-1 natural numbers, refer [here](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF). ~ O(n^2)
+
+------
+
+Incase if we need to generate all N-choose-k where k = 3 (above scenario is k=2)
+
+```#Generate combinations of N-choose-2
+for i in range(len(N) - 2):
+    for j in range(i+1, len(N) - 1):
+        for k in range (j+1, len(N)):
+            (i, j, k) #combination
+```

@@ -5,6 +5,7 @@ description: "server side vs client side rendering"
 categories: ["server-client"]
 date: 2024-03-07 19:45:31 +0530
 author: "Sai kiran"
+comments: false
 ---
 ## Introduction
 > What is server side vs client side rendering?

@@ -5,6 +5,7 @@ description: "Solving problems using computers"
 categories: ["cs"]
 tags: [""]
 author: "Sai Kiran"
+comments: false
 ---
 
 

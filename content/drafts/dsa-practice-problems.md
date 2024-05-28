@@ -6,6 +6,7 @@ categories: ["tech", "cs"]
 tags: ["algorithms"]
 date: 2023-12-11 19:45:31 +0530
 author: "Sai Kiran"
+comments: false  
 ---
 ## Problems to practive
 - Classify elements in the array. Given an array classify the numbers as even, odd. Put all even numbers to the start of the array and odd numbers to the end. EPI arrays

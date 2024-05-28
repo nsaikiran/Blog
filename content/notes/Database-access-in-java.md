@@ -5,6 +5,7 @@ description: "MySQL upgrade experience"
 categories: ["database", "java", "sql"]
 date: 2024-03-07 19:45:31 +0530
 author: "Sai Kiran"
+comments: false
 ---
 ## Introduction
 While working on a java micro-service that exposes REST APIs or a web application (that returns server-side rendered web pages to a "web browser"), or web application development in-general, we will have a requirement to access databases in Java.

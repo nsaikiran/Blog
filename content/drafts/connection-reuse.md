@@ -6,6 +6,7 @@ categories: ["cs"]
 type: "Scribe"
 date: 2023-12-11 19:45:31 +0530
 author: "Sai Kiran"
+comments: false  
 ---
 
 

@@ -5,6 +5,7 @@ description: "MySQL upgrade experience"
 categories: ["release-technique"]
 date: 2023-12-11 19:45:31 +0530
 author: "Sai Kiran"
+comments: false
 ---
 We use Amazon MySQL RDS for one of our services. When we wanted to purchase reserved instances to reduce the expenses. We needed to upgrade the MySQL RDS instance type and MySQL engine version.
 

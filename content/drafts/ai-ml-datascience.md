@@ -5,6 +5,7 @@ description: "ai-ml-datasci"
 categories: ["tech", "cs"]
 tags: ["execution-models"]
 author: "Sai Kiran"
+comments: false     
 ---
 
 How my thought process is in sync with Xconf keynote speech.

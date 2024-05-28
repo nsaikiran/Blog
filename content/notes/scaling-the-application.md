@@ -5,6 +5,7 @@ description: "How to scale applications for increased users, load with cost effe
 categories: ["system-design"]
 date: 2024-03-15 19:45:31 +0530
 author: "Sai Kiran"
+comments: false
 ---
 
 Software applications should be able to serve increased users and load with reasonable cost. The goal of the businesses have been to build highly available software with resonable opertaing cost. 

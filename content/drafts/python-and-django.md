@@ -3,6 +3,7 @@ layout: post
 title:  "Python and Django"
 categories: ["tech"]
 author: "Sai Kiran"
+comments: false
 ---
 
 ## TODO

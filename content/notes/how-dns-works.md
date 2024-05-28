@@ -5,6 +5,7 @@ description: "Anycast protocol"
 categories: ["notes"]
 date: 2024-04-18 19:45:31 +0530
 author: "Sai Kiran"
+comments: false
 ---
 
 While understanding [how the DNS works and how it is distributed globally and scaled well](https://www.youtube.com/watch?v=g_gKI2HCElk), I came across one important networking concept. That is anycast in networks. There are some DNS root servers in the world, each root server advertises to have more than one IP address. Each root server has physical server instances distributed across the globe. The request will be routed to geographically nearest physical server. But how that is possible is yet to understand, it is said that BGP helps doing this. 

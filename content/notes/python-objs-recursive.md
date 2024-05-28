@@ -5,6 +5,7 @@ description: "Pythons objects can be recursive"
 categories: ["tech"]
 date: 2024-05-11 19:45:31 +0530
 author: "Sai Kiran"
+comments: false
 ---
 
 Python objects can be recursive! for example, to a list you can add itself as an element.

@@ -5,6 +5,7 @@ description: "CSE"
 categories: ["tech", "cs"]
 tags: ["cs"]
 author: "Sai Kiran"
+comments: false  
 ---
 
 `During undergraduation, friends used to say CSE is so easy. What is there to learn, other 

@@ -87,7 +87,7 @@ Robot is emitting messages - time - message.
   - Solution: A simple hashing solution where, we store the message and its last seen timestamp in hash map, next time if the same message is seen, we will check the diff of timestamps. If it is less than K(for ex:10) then we show it.
 - Searialize standard python objects into JSON.
   - Seemed simple but they were looking at the way I'm handling the edge cases. Need to finish fast so that we could do a followup. Follow up question was [how to solve if the objects are recursive.](/content/notes/python-objs-recursive.md)
-- Q3
+- Bigram model
   - ![Question](images/Question.png)
   - ![My solution](images/Solution.png)
   - The question was easy, I was supposed to finish this quickly so that a little difficult followup could be asked.

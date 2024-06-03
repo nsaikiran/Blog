@@ -4,6 +4,7 @@ title:  "Practice"
 description: "DSA"
 categories: ["tech", "cs"]
 tags: ["algorithms"]
+date: 2023-12-12 19:45:31 +0530
 author: "Sai Kiran"
 ---
 ## Problem practice notes

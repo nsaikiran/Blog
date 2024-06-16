@@ -39,6 +39,12 @@ Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-nu
 ### Two pointers
 
 - Given an array of integers find two elements who sum is K
+- [Greatest difference between two elements, such that the larger element appears after the smaller element](https://www.geeksforgeeks.org/maximum-difference-between-two-elements/)
+  - The intuitive solution can be, while traversing the array, keep track of the minimum element so far, find the difference between minimum element sofar and current element, if the difference is greater than the difference seen sofar, update it. Refer [Apple online assessment](https://leetcode.com/discuss/interview-question/1044971/apple-online-assessment-2-questions)
+ 
+### Misc
+- [Apple online assessment](https://leetcode.com/discuss/interview-question/4482769/Apple-India-or-Software-Engineer-or-December-2023-or-Online-Assessment/)
+  - [Minimize Deviation in Array](https://www.geeksforgeeks.org/minimize-deviation-of-an-array-by-given-operations/)
 
 ### Dynamic Programming
 
@@ -52,6 +58,8 @@ Start from the smallest subproblems, solve them, save their solutions for refere
 - [0/1 Knapsack problem solution by striver](https://www.youtube.com/watch?v=GqOmJHQZivw)
 - https://www.pramp.com/challenge/61ojWAjLJbhob2nP2q1O
 - https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+- [The size of the longest incresing subsequence in an array](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
+  - The link attached has intuitive solution.
 
 ## Problems to practive
 

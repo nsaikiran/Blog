@@ -97,6 +97,9 @@ Robot is emitting messages - time - message.
 - Searialize standard python objects into JSON.
   - Seemed simple but they were looking at the way I'm handling the edge cases. Need to finish fast so that we could do a followup. Follow up question was [how to solve if the objects are recursive.](/content/notes/python-objs-recursive.md)
 - Bigram model
-  - ![Question](images/Question.png)
-  - ![My solution](images/Solution.png)
+  - ![Question](images/g-Question.png)
+  - ![My solution](images/g-Solution.png)
   - The question was easy, I was supposed to finish this quickly so that a little difficult followup could be asked.
+- Hacker rank test questions
+  - ![Q1](images/a-hackerrank-q1.png)
+  - ![Q2](images/a-hackerrank-q2.png)

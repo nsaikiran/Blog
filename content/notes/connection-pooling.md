@@ -16,6 +16,8 @@ Hence, you'll use connection pooling or connection manager etc, that holds a fix
 
 Know more about how connection managers work, how clients use connection manager etc.
 
+Watch [PostgreSQL connection management and per-client process model explained](https://www.youtube.com/watch?v=o7qLKfILuD8)
+
 Connection pooling:
 
 - [HikariCP - About pool sizing](https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing)

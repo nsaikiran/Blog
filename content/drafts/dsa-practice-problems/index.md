@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Practice"
+title:  "DSA Practice"
 description: "DSA"
 categories: ["tech", "cs"]
 tags: ["algorithms"]
@@ -106,6 +106,7 @@ Robot is emitting messages - time - message.
 - Hacker rank test questions
   - ![Q1](images/a-hackerrank-q1.png)
   - ![Q2](images/a-hackerrank-q2.png)
+Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-robber/description/) [GFG](https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/) check and do the problem.
 
 ### Shaw-attempt1
 

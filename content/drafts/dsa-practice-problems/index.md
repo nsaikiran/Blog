@@ -100,6 +100,9 @@ Robot is emitting messages - time - message.
   - ![Question](images/g-Question.png)
   - ![My solution](images/g-Solution.png)
   - The question was easy, I was supposed to finish this quickly so that a little difficult followup could be asked.
+  - Also, during interview I wanted to get the pair with maximum value, from hashmap quickly, but I couldn't get effective one other than O(n). Check the above code I wrote, I could have use collections.Counter in place of dict and may be could have use *most_common* method, but time complexity wise no better than linear. Because *most_common* takes *lower bounds of sorting* amount of time, i.e, O(nlogn) when argument isn't specified. And, they used heap data structure when argument is specificed, this is like creating heap and performing *n* pops.
+  - Learning: Be confident, no self-doubt.
+  - We wanted [a sorted set kind of thing.](https://jothipn.github.io/2023/04/07/redis-sorted-set.html)
 
 ### Ap-attempt1
 

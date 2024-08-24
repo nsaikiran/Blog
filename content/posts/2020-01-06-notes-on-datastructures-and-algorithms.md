@@ -104,10 +104,14 @@ Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-a
 ### Queue
 
 Read:
+
 - [To Queue Or Not To Queue](https://medium.com/basecs/to-queue-or-not-to-queue-2653bcde5b04)
+- Know both array based, and LL based implementation. LL based implementation is easy.
 
 ### Stack
+
 Read:
+
 - [Stacks and Overflows](https://medium.com/basecs/stacks-and-overflows-dbcf7854dc67)
 
 ### Map

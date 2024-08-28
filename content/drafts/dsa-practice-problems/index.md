@@ -72,6 +72,8 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 - Quick sort and merge sort code. Review once and write. How the merge step and pivot selection and placing it in right spot helps.
 - H-Index problem: https://leetcode.com/problems/h-index/description/
 - LRU cache implementation - ADT
+  - Common implementation is using HashMap to store key-value pair for easy mapping and a doubly linked list of keys to maintain the "least recent used" order so that eviction is easy.
+  - [We can also use signly linked list in place of doubly linked list, but implementaion will be not that intuitive as above](https://stackoverflow.com/questions/49621983/lru-cache-with-a-singly-linked-list)
 - [LFU cache implementation - ADT](https://arpitbhayani.me/blogs/lfu/)
 - Application of Ordered Set and its implementation. Python has OrderedDict,deque. Differences and their benefits.
 - NGE using stacks

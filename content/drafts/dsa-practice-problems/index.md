@@ -26,6 +26,7 @@ While traversing the array, track the current sum, store the sum of array ending
 Refer Number of substrings having an equal number of lowercase and uppercase letters
 It can be reduced to the above subarrays with sum K, where K=0 and each upper case letter is considered 1 and lower case letter is considered -1.
 Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-number-of-lowercase-and-uppercase-letters/
+- [Problem notes](problems/count-substrings-equal-frequency.md)
 
 ### Fast and slow pointers
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "DSA Practice"
+title:  "DSA problems practice notes"
 description: "DSA"
 categories: ["tech", "cs"]
 tags: ["algorithms"]
 date: 2023-12-12 19:45:31 +0530
 author: "Sai Kiran"
 ---
-## Problem practice notes
+## Concept-wise
 
 ### Array based
 
@@ -16,6 +16,7 @@ author: "Sai Kiran"
 Refer https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/ or https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/ they are about the same problem.
 
 ##### Brute force
+
 Generate all the subarrays, calculate sum and check. [N-choose-2 possibile subarrays](/content/notes/combinations-and-nested-for-loops.md) will be there.
 
 ##### Better approach
@@ -98,7 +99,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 Robot is emitting messages - time - message.
   - Solution: A simple hashing solution where, we store the message and its last seen timestamp in hash map, next time if the same message is seen, we will check the diff of timestamps. If it is less than K(for ex:10) then we show it.
 - Searialize standard python objects into JSON.
-  - Seemed simple but they were looking at the way I'm handling the edge cases. Need to finish fast so that we could do a followup. Follow up question was [how to solve if the objects are recursive.](/content/notes/python-objs-recursive.md)
+  - Seemed simple but they were looking at the way I'm handling the edge cases. Need to finish fast so that we could do a followup. Follow up question was [how to solve if the objects are recursive.](/content/notes/python-objs-recursive)
 - Bigram model
   - ![Question](images/g-Question.png)
   - ![My solution](images/g-Solution.png)

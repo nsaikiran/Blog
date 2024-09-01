@@ -15,10 +15,10 @@ author: "Sai Kiran"
 
 Refer https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/ or https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/ they are about the same problem.
 
-- Brute force
+##### Brute force
 Generate all the subarrays, calculate sum and check. [N-choose-2 possibile subarrays](/content/notes/combinations-and-nested-for-loops.md) will be there.
 
-- Better approach
+##### Better approach
 While traversing the array, track the current sum, store the sum of array ending at each index in a hash map (sum and index mapping). Check if the K-currsum exists in the hashmap.
 
 #### Number of substrings having an equal number of lowercase and uppercase letters
@@ -26,7 +26,6 @@ While traversing the array, track the current sum, store the sum of array ending
 Refer Number of substrings having an equal number of lowercase and uppercase letters
 It can be reduced to the above subarrays with sum K, where K=0 and each upper case letter is considered 1 and lower case letter is considered -1.
 Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-number-of-lowercase-and-uppercase-letters/
-- [Problem notes](problems/count-substrings-equal-frequency.md)
 
 ### Fast and slow pointers
 
@@ -62,7 +61,7 @@ Start from the smallest subproblems, solve them, save their solutions for refere
 - [The size of the longest incresing subsequence in an array](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
   - The link attached has intuitive solution.
 
-## Problems to practive
+## Problems to practice
 
 - Classify elements in the array. Given an array classify the numbers as even, odd. Put all even numbers to the start of the array and odd numbers to the end. EPI arrays
 - Find sum of most K recent numbers of a stream
@@ -87,7 +86,8 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 - Given a set of cartesian points, generate the bounding box that includes all the points.
 - Given two strings, and we can cut the strings at same position. After cut we take the left half of the first string and right part of the second string and join them to form a new string. How many of those new strings are plindromes - https://cs.stackexchange.com/questions/109662/divide-two-strings-to-form-palindrome 
 - Given a string with limited number of characters repeating. Find the number of substrings where the count of all allowed characters is same in the substring.
-  - Ex: RBRRB https://stackoverflow.com/questions/22604728/finding-substring-with-equal-number-of-characters
+  - Ex: RBRRB 
+  - [Program to generate all such substrings](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/substrings-with-all-unique-chars-and-same-freq.py)
 - General json validation: string processing. Should have covered all of the edge cases. And validated the approached up front. So that I was confident while coding.
 - Given start binary pattern and destination binary pattern, see if we can reach from start pattern to end, in each step only one bit can be flipped. Also given a set of safe states through which you should be traversing. Moving to a non-safe pattern in invalid. https://leetcode.com/discuss/interview-experience/515564/google-l3-hyderabad-feb-2020-rejected lock round 5
 - Given a dictionary of words, suggest the user words based first few characters typed, like the functionality in mobile phone typing scenario.

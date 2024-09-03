@@ -36,7 +36,7 @@ But I'm also listing properties here:
 
 - Each simple operation (+, *, -, =, if, call) takes exactly 1 time step.
 - Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for _sort_ to be a single-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogram depends upon the number of loop iterations or the specific nature of the subprogram.  
-- Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis. 
+- Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis.
 
 ### Accounting on RAM
 
@@ -62,13 +62,13 @@ As discussed, solutions that just need numerical computation may not any data st
 
 Fundamentally we can store the data contigously (as an array of objects) or non-contigous/linked (linked objects).
 
-#### Array: 
+#### Array
 
 As the objects stored as an array are stored contigously, randomly accessing an object based on its index takes constant time. But insert/delete operations will take more work. We also need to know the no. of objects upfront to be able to allocate the required memory. 
 
 In an array, objects are stored contigously. As an array objects are of same type and are stored contigously, is very easy to index into an array -- you can always calculate the position of object if you know the index of the object in that array. But inserting into an array would be a costlier operation, because to make room for the extra object. Array is suitable if we the data is of fixed size known at the time of allocation and we perform indexing operation often.
 
-#### Linked objects:
+#### Linked objects
 
 But if we want to be able to insert/delete objects often or we don't know the size of data upfront. We can go for Linked objects, where objects are linked to each other. In this objects may not be stored contigously. As the physical location of the objects are not evident, we can't index into Linked objects as quickly we did in an array. Each object stores position of object(s) that can be reached. Eamples: Single linked list, double-linked list.
 
@@ -89,7 +89,7 @@ Another example is _Hashing_: where we bring correlation between representaton o
 
 TODO: Try to give more examples.
 
-## Abstract data types:
+## Abstract data types
 
 For solving the problem, we first need to decide the operations on objects. The theoretical definition of required operations is called _an Abstract Data Type_. Type of the data describes operations allowed on the data. Because ADT don't have implementation, it is called as _abstract_. For a given ADT, we try to implement data structures that supports those operations; we compare them and pick the one with a reasonable amount of complexity.
 Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), [Circuar queue](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/Queue.html#the-circular-queue), Priority queue, Graph, Min-Max-heap, Map(of a key-value pair), and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
@@ -97,41 +97,58 @@ Sometimes, well implemented ADTs may be built-into the programming language you 
 
 ### List
 
-Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
-
 `list` is an example of dynamic array or variable sized array. Variable sized array can be implemented as linked objects as well as contigously stored objects.  If indexing operation is required then Variable sized array should be implemented with contigously stored objects.  But it is little tricky to implement Variable sized array with contigously stored objects. In [this lecture](https://www.youtube.com/watch?v=BRO7mVIFt08) Prof. Erik Demaine explains implementing Variable sized array as contigously stored objects using Table Doubling. [Python's `list` data type is backed by table doubling implementation](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) where as [`Deque` is implemented as double-linked data objects](https://github.com/python/cpython/blob/v3.8.1/Modules/_collectionsmodule.c#L33). Both can grow to variable length, but Deque can do insert and delete operations on both the sides effectively. And, [python's `deque` container can be used as a Circular Queue aswell.](https://docs.python.org/3/library/collections.html#deque-objects)
+
+Python's [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) can be used as both Stack and Queue. But, [`list` is not an optimal option to implement Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues) as queue will take insertions at the beginning. [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
 
 ### Queue
 
 Read:
 
 - [To Queue Or Not To Queue](https://medium.com/basecs/to-queue-or-not-to-queue-2653bcde5b04)
-- Know both array based, and LL based implementation. LL based implementation is easy.
+- Know both array based and linked list based implementation. LL based implementation is easy.
 
 ### Stack
 
 Read:
 
 - [Stacks and Overflows](https://medium.com/basecs/stacks-and-overflows-dbcf7854dc67)
+- Know both array based and linked list based implementation.
 
 ### Map
-For example, a key to value _map_ can be implemented with hashing which is called as [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) (in Python it is Dictionary) or with a balanced BST which can be called as [TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html). These different implementations have different characteristics.
+
+Map datastructure store _key and value_ pairs to provide efficient look-ups. For example, a key to value _map_ can be implemented with hashing which is called as [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) (in Python it is Dictionary) or with a balanced BST which can be called as [TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html). [LinkedHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html) with a doubley linked list. These different implementations have different characteristics.
+
+- HashMap provides faster access and can't provide _natural_/_sorted_ ordering of the keys. No order.
+- TreeMap provides O(log N) operations and provides _natural_/_sorted_ ordering of the keys. Natural order.
+- [LinkedHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html) remembers the insertion order.
 
 #### Examples
-- [LRU](https://www.enjoyalgorithms.com/blog/implement-least-recently-used-cache) using HashMap and DLL
-- [LFU cache implementation - ADT](https://arpitbhayani.me/blogs/lfu/) using HashMap and DLL
+
+- [LRU cache implementation](https://www.enjoyalgorithms.com/blog/implement-least-recently-used-cache) using HashMap and DLL
+  - HashMap will have the mapping of key and the objects location in a double-linked-list of the objects. We use linked list of objects to sort the objects based on "recently access", the "least recently used" object will be at the end of the linked list. Whenever we insert/update a key's value, we move that object to the beginning. When we needed to evict a key to insert a new key, we delete the last element from linked list (which is least recently used).
+  - We could also use a single linked list here, but the implementation will be tricky. The main reason for double linked list is to facilitate the easy deletion of object. So, [check how we can replace that with single  linked list](https://stackoverflow.com/questions/49621983/lru-cache-with-a-singly-linked-list)
+- [LFU cache implementation - ADT](https://arpitbhayani.me/blogs/lfu/) using HashMap and DLL.
+  - This cache will evict the "least frequently used" element when it has to insert a new key-value pair and its limit is reached.
+  - Usually this is implemented with "min-heap" in which objects are stored based on their "access count", but this provides O(log N) complexity. O(1) solution is discussed, using double linked list and HashMap, go through this.
 
 ### Set
+
 A set of items can be implemented with Hashing, which is [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or a balanced BST, which is [TreeSet](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html). The characteristics of HashSet and TreeSet are different such as the ordering of elements stored, HashSet doesn't gurantee the sorted order of items but TreeSet does. If we want to _remember_ the insertion order of items into the set(while traversing through the elements), then [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html) maybe used.
 
+### Sorted Set
+
+[Sorted Set](https://jothipn.github.io/2023/04/07/redis-sorted-set.html), is an ADT which can give both set features and sorted ordereing or natural ordering of keys
 
 ### Heap
 
 Read:
+
 - [Learning to Love Heaps by Vaidehi Joshi](https://medium.com/basecs/learning-to-love-heaps-cef2b273a238)
 - [Python's heapq](https://docs.python.org/3/library/heapq.html)
 
 ### Priority Queue
+
 Priority Queue can be implemented with [Heap data structure](https://en.wikipedia.org/wiki/Heap_(data_structure)).
 
 Graphs can be implemented with linked nodes or adjacency matrix (two-dimentional array) or adjacency list 
@@ -139,13 +156,11 @@ Graphs can be implemented with linked nodes or adjacency matrix (two-dimentional
 
 Explore trees: Height balanced binary search trees(AVL or Red black trees), B-trees etc
 
-### Example
-- [LRU cache implementation]()
-- [Sortedd Set](https://jothipn.github.io/2023/04/07/redis-sorted-set.html)
 
 TODO: give more examples
 
 ### Data structuers in programming lanauges
+
 Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. For C++ and Java, you can use from their standard library. Maybe try to Understand the _memory model_ of each the language you are using. 
 
 TODO: more in this section?

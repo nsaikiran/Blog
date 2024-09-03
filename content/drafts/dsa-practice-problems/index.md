@@ -20,6 +20,7 @@ Refer https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-int
 Generate all the subarrays, calculate sum and check. [N-choose-2 possibile subarrays](/content/notes/combinations-and-nested-for-loops.md) will be there.
 
 ##### Better approach
+
 While traversing the array, track the current sum, store the sum of array ending at each index in a hash map (sum and index mapping). Check if the K-currsum exists in the hashmap.
 
 #### Number of substrings having an equal number of lowercase and uppercase letters

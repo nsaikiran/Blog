@@ -77,7 +77,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
   - [We can also use signly linked list in place of doubly linked list, but implementaion will be not that intuitive as above](https://stackoverflow.com/questions/49621983/lru-cache-with-a-singly-linked-list)
 - [LFU cache implementation - ADT](https://arpitbhayani.me/blogs/lfu/)
 - Application of Ordered Set and its implementation. Python has OrderedDict,deque. Differences and their benefits.
-- NGE using stacks
+- [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py): Example of using stack datastructure
 - Problems from https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews
   - all sections atleast 2 questions or 2 model of questions
 

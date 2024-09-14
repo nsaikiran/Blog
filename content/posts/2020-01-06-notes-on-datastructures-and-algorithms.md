@@ -110,6 +110,8 @@ Read:
 
 ### Stack
 
+Example problem that uses stack datastructure: [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py)
+
 Read:
 
 - [Stacks and Overflows](https://medium.com/basecs/stacks-and-overflows-dbcf7854dc67)
@@ -166,23 +168,28 @@ Many high level programming lanauges provide abstract data types built-in and ot
 TODO: more in this section?
 
 ## Algorithms
+
 As discussed, for producing algorithms for computers, we need good understanding on how computers work. Algorithm must be correct, and we should be able to check/prove the correctness before using it(For all problem instances it should produce correct result). There are techniques to prove that given algorithm is correct. Out of all correct algorithms (candidate algorithms), we pick the optimal one(in our context). So, we should always focus on producing correct algorithms, and then we can think about optimations.
 
 Refer Chapter 1.1 of CLRS. (CLRS 3rd Ed)
 <!-- what to check in this chapter -->
 
 Some important points:
-- Understanding *recursion* is important, because for reusing/parameterizing the code, we break the code in functions. *Recursion* is very useful in breaking down the problems into smaller problems of easy analysis. 
+
+- Understanding _recursion_ is important, because for reusing/parameterizing the code, we break the code in functions. _Recursion_ is very useful in breaking down the problems into smaller problems of easy analysis.  
 - Understanding the problem context and the input data very well can help producing algorithms that work best in that specific context. For example, if we are solving a sorting problem, if our data range is very small compared to the size of the data, we go for a counting sort. 
 
 <!-- Give more exmaples for context based best things -->
 ### Various common problems and solutions/algorithms:
+
 Some well-known problems and their solutions are listed here.
 
 #### Searching problems:
+
 - [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm): This algorithm requires data to be sorted.
 
 #### Sorting problems:
+
 - Insertion sort: in-place, _stable_, optimal for almost sorted data. If other properties of data are unknown, then suitable for small number of data items.
 - [Quick sort](https://www.enjoyalgorithms.com/blog/quick-sort-algorithm): D&C
 - Merge sort: D&C
@@ -200,13 +207,16 @@ Algorithm (for computer) is the steps of solution that a computer can perform. W
 TODO: update this section
 
 General problem solving techniques:
+
 - Divide and conquer
 - Greedy
 - Dynamic programming
 - etc
 - Explain the relation among those.
+- Sliding window technique
 
 Give reference to examples of these:
+
 - Recursion
 - Back tracking 
 - Search algorithms

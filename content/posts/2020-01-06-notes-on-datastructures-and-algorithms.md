@@ -136,11 +136,22 @@ Map datastructure store _key and value_ pairs to provide efficient look-ups. For
 
 ### Set
 
-A set of items can be implemented with Hashing, which is [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or a balanced BST, which is [TreeSet](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html). The characteristics of HashSet and TreeSet are different such as the ordering of elements stored, HashSet doesn't gurantee the sorted order of items but TreeSet does. If we want to _remember_ the insertion order of items into the set(while traversing through the elements), then [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html) maybe used.
+[A set of items can be implemented](https://docs.oracle.com/javase/tutorial/collections/implementations/set.html) with Hashing, which is [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or a balanced BST, which is [TreeSet](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html), or a linked list, which is [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html). The characteristics of HashSet, TreeSet and LinkedHashSet are different. HashSet doesn't remember any order, where as TreeSet and LinkedHashSet remember order of elements. Along with set functionality, if we need an iterator of elements to traverse them in the natural order then TreeSet can be used, if we need an iterator to traverse in the order of insertion then LinkedHashSet (ADT contains set and double linked list) can be used. Also, the timecomplexities may vary. HasSet and LinkedHashSet provides O(1) but TreeSet provides O(log N) for all basic operations like find, insert and delete.
 
-### Sorted Set
+Difference between Map and Set is elements of set will not have associated values but map's elements will have associate members. In Map values are _indexed_ by the key like elements in array are indexed by their position.
 
-[Sorted Set](https://jothipn.github.io/2023/04/07/redis-sorted-set.html), is an ADT which can give both set features and sorted ordereing or natural ordering of keys
+### Redis Sorted Set
+
+Let us say we've below requirements:
+
+- We've a key value pair, we want to get the value of given key: HasMap functionality (Or dict in python).
+- We want the ordering of elements based on their _value_. To answer queries like, rank of an element, top X elements based on value and update the value as and when required.
+
+Example could be a leader board. Given a player you want to know their score. Who are top 10 players, what is the rank of a particular user.
+
+This ADT is interesting and is provided in Redis, this isn't provided in Python or Java but we can implement. This ADT can be implemented using a HasMap and a [skip list](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/SkipList.html#). Here, skip list will have elements (key-value pairs) sorted using their _values_. Through skip list we can achieve _binary search_ like functionality in linked lists -- O(long N) for search. In this ADT, skip list can be augmented with extra information (like how many elements are skipped) to calculate the rank very quickly.
+
+For more information refer [Sorted Set](https://jothipn.github.io/2023/04/07/redis-sorted-set.html). The name _sorted set_ seems counterintuitive but I also have no name for a HashMap which also maintains the sorted ordering based on values.
 
 ### Heap
 
@@ -163,7 +174,9 @@ TODO: give more examples
 
 ### Data structuers in programming lanauges
 
-Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. For C++ and Java, you can use from their standard library. Maybe try to Understand the _memory model_ of each the language you are using. 
+Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. For C++ and Java, you can use from their standard library. Maybe try to Understand the _memory model_ of each the language you are using.
+
+In the above section, we've mentioned some datastructures from Java and some from Python. Though 
 
 TODO: more in this section?
 

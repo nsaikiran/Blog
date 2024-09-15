@@ -110,7 +110,12 @@ Read:
 
 ### Stack
 
-Example problem that uses stack datastructure: [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py)
+Example problem that uses stack datastructure: 
+
+- [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py)
+- [Reverse a string]() TODO
+- [Check for valid paranthesis]() TODO
+- [Browser history?]() TODO
 
 Read:
 

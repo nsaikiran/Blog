@@ -78,6 +78,13 @@ Read:
 
 - [What’s a Linked List, Anyway? [Part 1]](https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d)
 
+Operations on linked-list:
+
+- Can't index, linear traversal is required. Even if the linked list is sorted finding an object will take linear time.
+- Binary seach won't work, linked list can be augmented to be tranformed into a skip list to get same effect of binary search.
+- Modified mergesort suits best for sorting.
+- Using fast and slow pointer, we can find, middle of linked list, k th last element etc.
+
 ### Imporatnace of relations
 
 Now, imagine we've an array of integers and our task is to check if a given integer exists in our array. Here, we need to find the given integer in the array. It costs us time that is propotional to the size of the array. (Consider we do this opeartion very often) But how can we reduce this? We sort the array. Interestingly when we sort the array in ascending order, we've established correlation between locality of the integer with its value &mdash; an integer is located after integers that are less than this. Using this correlaation we perform binary search. The same principle applies to binary search trees where all keys that are lesser will be stored in its left side. We know the concept of _Height Balanced Binary Search Trees_, which provide us find operation in logarithmic of input even in worst case. But we also spend some extra time to balance the tree, right after a change is done on the tree(which may be ignored if changes to the tree is lesser compared to read/find operations). 
@@ -113,9 +120,9 @@ Read:
 Example problem that uses stack datastructure: 
 
 - [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py)
-- [Reverse a string]() TODO
+- [Given a string print it in reverse]() TODO
 - [Check for valid paranthesis]() TODO
-- [Browser history?]() TODO
+- [Backtracking/Browser history/Undo-redo]() TODO. Browser history and undo-redo are like backtracking
 
 Read:
 
@@ -181,7 +188,7 @@ TODO: give more examples
 
 Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. For C++ and Java, you can use from their standard library. Maybe try to Understand the _memory model_ of each the language you are using.
 
-In the above section, we've mentioned some datastructures from Java and some from Python. Though 
+In the above section, we've mentioned some datastructures from Java and some from Python. The goal is to understanding various implementations of ADTs, hence we've collated for different languages.
 
 TODO: more in this section?
 

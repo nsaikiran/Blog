@@ -31,7 +31,9 @@ In general [All Things Distributed](https://www.allthingsdistributed.com/) is go
 
 ### Questions I've created
 
-Design a music player. Given some location in drive that contains music files, create a music player that has play, pause, previous, next, forward, backward, playlists creation and browsing etc.
+* Design a music player. Given some location in drive that contains music files, create a music player that has play, pause, previous, next, forward, backward, playlists creation and browsing etc.
 
+* Design a browser tab's history tracker. Simulate back and forward button. Also, if I traverse back and move forward, we want to remember the previous next also. Basically from one state I should have multiple outgoing links.
+  * Solution will stack based implementation for traversing back, each node _can_ have more than one outgoing link. Traversing back on stack datastructure is like _backtracking_ (pop operation), hence for _backtracking_ in recursion and graphs we use stack datastructure. Directory traversal is also a similar solution.
 
 [smaller-service-in-control]: https://aws.amazon.com/builders-library/avoiding-overload-in-distributed-systems-by-putting-the-smaller-service-in-control

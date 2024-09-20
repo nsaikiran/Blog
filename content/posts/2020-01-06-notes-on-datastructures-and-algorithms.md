@@ -99,7 +99,7 @@ TODO: Try to give more examples.
 ## Abstract data types
 
 For solving the problem, we first need to decide the operations on objects. The theoretical definition of required operations is called _an Abstract Data Type_. Type of the data describes operations allowed on the data. Because ADT don't have implementation, it is called as _abstract_. For a given ADT, we try to implement data structures that supports those operations; we compare them and pick the one with a reasonable amount of complexity.
-Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), [Circuar queue](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/Queue.html#the-circular-queue), Priority queue, Graph, Min-Max-heap, Map(of a key-value pair), and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
+Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), [Circuar queue][Circular-queue-implementation], Priority queue, Graph, Min-Max-heap, Map(of a key-value pair), and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
 Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
 
 ### List
@@ -110,20 +110,23 @@ Python's [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemen
 
 ### Queue
 
+FIFO is the removal strategy.
 Read:
 
 - [To Queue Or Not To Queue](https://medium.com/basecs/to-queue-or-not-to-queue-2653bcde5b04)
-- Know both array based and linked list based implementation. LL based implementation is easy.
+- Queue can be implemented with both array and linked list. Lined list based implementation is easy to do. Because dequeue will create empty slots at the front of the list.
+- [Circular queue or ring buffer can be thought of a bounded queue, and when this is implemented using array, each deque operation will create empty slots at the front of the array. We need to use these empty slots to enqueue items further, hence we can see circular usage.][Circular-queue-implementation].
+  - We can use ring buffer implementation to track _most recent_ elements in the stream, for example, given a stream of data, calculate _max_/_sum_ of most recent K numbers.
 
 ### Stack
 
-Example problem that uses stack datastructure: 
+LIFO is removal strategy.
+Example problem that uses stack datastructure:
 
 - [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py)
 - [Given a string print it in reverse]() TODO
 - [Check for valid paranthesis]() TODO
-- [Backtracking/Browser history/Undo-redo]() TODO. Browser history and undo-redo are like backtracking
-
+- [Backtracking, Browser tab's next and previous navigation and undo-redo on a document] () TODO
 Read:
 
 - [Stacks and Overflows](https://medium.com/basecs/stacks-and-overflows-dbcf7854dc67)
@@ -183,6 +186,11 @@ Explore trees: Height balanced binary search trees(AVL or Red black trees), B-tr
 
 
 TODO: give more examples
+
+### Trees
+
+- in-order, pre-order and post-order traversal.
+- depth-first traversal (recursion/backtracking/stack), breadth-first traversal (queue).
 
 ### Data structuers in programming lanauges
 
@@ -279,6 +287,8 @@ Introduce Computatability of problem, NP-Completeness?
 - [What is Datastructure](https://web.archive.org/web/20230924100056/https://www.enjoyalgorithms.com/blog/introduction-to-data-structures)
 - [Vaidehi Joshi's CS basics](https://medium.com/basecs)
 
+
+[Circular-queue-implementation]: https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/Queue.html#the-circular-queue
 <!---
 ==========================================================
 EDITING NOTES:

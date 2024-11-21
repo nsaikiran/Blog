@@ -3,7 +3,7 @@ layout: post
 title:  "Monitoring applications"
 description: "Monitoring large scale applications"
 categories: ["system-design"]
-date: 2024-1-21 19:45:31 +0530
+date: 2024-11-21 19:45:31 +0530
 author: "Sai Kiran"
 comments: false
 ---

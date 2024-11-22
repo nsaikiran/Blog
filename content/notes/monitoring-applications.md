@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Monitoring applications"
 description: "Monitoring large scale applications"
 categories: ["system-design"]

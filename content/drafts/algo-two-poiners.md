@@ -17,3 +17,8 @@ To get the linear time complexity while solving some problems on arrays or linke
 - Remove duplicates from a sorted array/linked list.
 - Transform the given array: Even numbers should be in the first half and odd number will be the sencond half.
 - Pivoting of linked list (EPI Python)
+
+
+### To read
+
+- Rain water harvesting and its relation to NGE problem

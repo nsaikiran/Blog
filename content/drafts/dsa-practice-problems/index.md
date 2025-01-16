@@ -31,20 +31,20 @@ Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-nu
 
 ### Fast and slow pointers
 
-- Classify the number in an array: Move all the odd numbers to beginnig of the array
-- Remove zeros from the array
-- Remove duplicate numbers from the array
-- https://www.pramp.com/challenge/9PNnW3nbyZHlovqAvxXW
-
-- Loop in a linked list
+- Classify the number in an array: Move all the odd numbers to beginnig of the array/linked list
+- Remove zeros from the array/linked list
+- Remove duplicate numbers from the array/lined list
+- [Move Zeros to the end](https://www.pramp.com/challenge/9PNnW3nbyZHlovqAvxXW)
+- Check if loop exists in the given linked list
 
 ### Two pointers
 
-- Given an array of integers find two elements who sum is K
+- Given an array of integers find two elements who sum is K. (2-sum or 3-sum problem)
 - [Greatest difference between two elements, such that the larger element appears after the smaller element](https://www.geeksforgeeks.org/maximum-difference-between-two-elements/)
   - The intuitive solution can be, while traversing the array, keep track of the minimum element so far, find the difference between minimum element sofar and current element, if the difference is greater than the difference seen sofar, update it. Refer [Apple online assessment](https://leetcode.com/discuss/interview-question/1044971/apple-online-assessment-2-questions)
- 
+
 ### Misc
+
 - [Apple online assessment](https://leetcode.com/discuss/interview-question/4482769/Apple-India-or-Software-Engineer-or-December-2023-or-Online-Assessment/)
   - [Minimize Deviation in Array](https://www.geeksforgeeks.org/minimize-deviation-of-an-array-by-given-operations/)
 
@@ -58,7 +58,7 @@ Break down the problem, write a recurrence that solves the problem. There are tw
 Start from the smallest subproblems, solve them, save their solutions for reference. Each problem depends on the solution of smaller problems that are already solved. In this approach, we might solve the subproblems which may not be used later.
 - [Fibonacci numbers problem by basecs](https://medium.com/basecs/less-repetition-more-dynamic-programming-43d29830a630)
 - [0/1 Knapsack problem solution by striver](https://www.youtube.com/watch?v=GqOmJHQZivw)
-- https://www.pramp.com/challenge/61ojWAjLJbhob2nP2q1O
+- [Deletion Distance](https://www.pramp.com/challenge/61ojWAjLJbhob2nP2q1O)
 - https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 - [The size of the longest incresing subsequence in an array](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
   - The link attached has intuitive solution.
@@ -80,6 +80,13 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 - [Find immediante next greater element for each element in an array](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/nge.py): Example of using stack datastructure
 - Problems from https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews
   - all sections atleast 2 questions or 2 model of questions
+
+### Queries on a stream of data
+
+- [Find running median from a stream of integers](https://stackoverflow.com/questions/10657503/find-running-median-from-a-stream-of-integers). [Leetcode](https://leetcode.com/problems/find-median-from-data-stream/description/)
+- [Sum of most recent K numbers of a stream of integers]() TODO.
+- [Median of most reent K number os a stream of integers]() TODO.
+- [Hit Counter that counts the number of hits within recent time](https://leetcode.ca/2016-11-26-362-Design-Hit-Counter/)
 
 ## Previous questions and learnings
 
@@ -114,7 +121,7 @@ Robot is emitting messages - time - message.
 - Hacker rank test questions
   - ![Q1](images/a-hackerrank-q1.png)
   - ![Q2](images/a-hackerrank-q2.png)
-Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-robber/description/) [GFG](https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/) check and do the problem.
+Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-robber/description/) [GFG](https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/) check and do the problem. House robber problem is disguised as [*maximum sum of non adjacent elements*](https://leetcode.com/discuss/interview-question/702177/apple-phone-maximum-sum-of-non-adjacent-elements).
 
 ### Shaw-attempt1
 

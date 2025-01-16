@@ -32,3 +32,7 @@ How nginx handles many connections simultaneously.
 - [How Does NGINX Work?](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/#process-model) read the comments.
 They are very informative.
 - [Socket sharding nginx](https://www.nginx.com/blog/socket-sharding-nginx-release-1-9-1/)
+
+### Summary
+
+Learn about connection polling in general with various examples.

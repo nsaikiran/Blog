@@ -18,6 +18,7 @@ Software applications should be able to serve increased users and load with reas
    - The goal here is to understand the concepts.
    - Some of the previous events are [Scaling Up to Your First 10 Million Users/2014](https://www.youtube.com/watch?v=ccojvcQq858), [Deep Dive: Scaling Up to Your First 10 Million Users / 2015](https://www.youtube.com/watch?v=KulMgJnMLsw), find the respective slides from [slideshare](https://www.slideshare.net/search?utf8=%E2%9C%93&searchfrom=header&q=+Scaling+on+AWS+for+the+First+10+Million+Users+). Compare the slides to learn differences.
 3. [It's all a numbers game](https://www.youtube.com/watch?v=1KRYH75wgy4) Try to get the numbers for the system by having clear understanding, numbers don't lie and they'll give a chance to unambiguous and informed scaling decision.
+4. [Baseds](https://medium.com/baseds) by Vaidehi
 
 Go through these and list down concepts and describe those concepts.
 

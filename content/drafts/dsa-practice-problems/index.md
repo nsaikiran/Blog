@@ -37,6 +37,10 @@ Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-nu
 - [Move Zeros to the end](https://www.pramp.com/challenge/9PNnW3nbyZHlovqAvxXW)
 - Check if loop exists in the given linked list
 
+### Sliding window
+
+- (Check if these fall into same category). Understand [the pattern](https://nan-archive.vercel.app/sliding-window) and solve [some problems](https://www.geeksforgeeks.org/number-substrings-count-character-k/ )
+
 ### Two pointers
 
 - Given an array of integers find two elements who sum is K. (2-sum or 3-sum problem)
@@ -47,6 +51,8 @@ Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-nu
 
 - [Apple online assessment](https://leetcode.com/discuss/interview-question/4482769/Apple-India-or-Software-Engineer-or-December-2023-or-Online-Assessment/)
   - [Minimize Deviation in Array](https://www.geeksforgeeks.org/minimize-deviation-of-an-array-by-given-operations/)
+
+- [Fenwick/BIT Tree](https://www.enjoyalgorithms.com/blog/binary-indexed-tree) learn concept/pattern behind this.
 
 ### Dynamic Programming
 

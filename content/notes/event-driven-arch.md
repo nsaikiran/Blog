@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Event driven systems"
 description: "How event driven architecture works"
 categories: ["system-design"]

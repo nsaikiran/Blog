@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Importance of problem solving skills"
 description: "Skills to master to be relevant"
 categories: ["problem solving"]

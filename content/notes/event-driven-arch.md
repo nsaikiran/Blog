@@ -8,7 +8,7 @@ author: "Sai Kiran"
 comments: false
 ---
 
-I was Reading about the _event driven architecture_. The usecases of it, how it is used in current software systems and its benefits. Major tools for event driven architecture are Apache kafka, Rabbit MQ and Amazon SQS.
+I was reading about the _event driven architecture_. The usecases of it, how it is used in current software systems and its benefits. Major tools for event driven architecture are Apache kafka, Rabbit MQ and Amazon SQS.
 
 THe below resources help to understand usecases where event driven architecture fits (and kafka)
 
